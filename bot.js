@@ -1,8 +1,9 @@
 var latestMessage;
 var latestSender;
+var prefix = "-";
 
 //change username
-document.getElementById("username-box").value = "CollabVM Bot";
+document.getElementById("username-box").value = "CollabVM Bot -help";
 document.getElementById("username-ok-btn").click();
 
 //sends message
@@ -18,10 +19,10 @@ latestSender = document.getElementById("chat-box").lastElementChild.lastElementC
 function check() {
   latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1]; //gets everything after ▸ aka the message itself
   latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0]; //gets everything before ▸ aka the sender
-  if (latestMessage == "!test") {
+  if (latestMessage == prefix + "test") {
     send("hi");
   }
-  if (latestMessage == "!help") {
+  if (latestMessage == prefix + "help") {
     send("!test - responds hi");
     send("!help - shows commands");
     send("!about - about bot");
@@ -30,13 +31,13 @@ function check() {
     //send("!selfdestruct - kills bot");
     send("!whoami - your username");
   }
-  if (latestMessage == "!about") {
+  if (latestMessage == prefix + "!about") {
     send("CollabVM-Bot Beta by iexist");
   }
-  if (latestMessage == "!mtgen") {
+  /*if (latestMessage == prefix + "!mtgen") {
     send(latestSender + ", no");
-  }
-  if (latestMessage == "!whoami") {
+  }*/
+  if (latestMessage == prefix + "whoami") {
     send(latestSender);
   }
   /*if (latestMessage.includes("!say")) {
