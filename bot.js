@@ -12,7 +12,7 @@ function send(string) {
 }
 
 //checks for latest message
-while (true) {
+for (;;) {
   latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1]; //gets everything after ▸ aka the message itself
   latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0]; //gets everything before ▸ aka the sender
   if (latestMessage == "!test") {
