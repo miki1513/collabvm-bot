@@ -20,7 +20,7 @@ changeUsername("CollabVM Bot -help");
 send("Bot started");
 
 //checks for latest message
-const interval = setInterval(function() {check()}, 5000);
+const interval = setInterval(function() {check()}, 3000);
 latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1];
 latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0];
 function check() {
@@ -34,12 +34,14 @@ function check() {
     send("-help - shows commands");
     send("-about - about bot");
     //send("!mtgen - from general darian");
-    send("!say - says whatever is after it");
+    send("-help2 - shows second list of commands (bcuz chat cooldown)");
     //send("!selfdestruct - kills bot");
-    send("-whoami - your username");
   }
+  if (latestMessage == prefix + "help2") {
+    send("-say - says whatever is after it");
+    send("-whoami - your username");
   if (latestMessage == prefix + "about") {
-    send("CollabVM Bot by iexist");
+    send("hello i am bot beep boop");
   }
   /*if (latestMessage == prefix + "!mtgen") {
     send(latestSender + ", no");
