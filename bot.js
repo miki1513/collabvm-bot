@@ -13,7 +13,7 @@ function send(string) {
 //checks for latest message
 while (true) {
   latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1]; //gets everything after ▸ from latest message on chatbox
-  if (latest-message == "!test") {
+  if (latestMessage == "!test") {
     send("hi");
   }
 }
