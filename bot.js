@@ -57,7 +57,7 @@ function check() {
   }
   if (latestMessage == "-selfdestruct") {
     if (latestSender == "CollabVM Bot -help") {
-      changeUsername("guest" + (Math.floor(Math.random() * 98999) + 1000));
+      changeUsername("guest" + Math.floor(Math.random() * 98999));
       send("Bot stopped");
       location.reload();
     } else {
