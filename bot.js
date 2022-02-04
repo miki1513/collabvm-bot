@@ -53,7 +53,7 @@ function check() {
   if (latestMessage == "-selfdestruct") {
     if (latestSender == "CollabVM Bot -help") {
       send("goodbye world");
-      changeUsername("bot is off");
+      changeUsername("Bot stopped");
     } else {
       send("no");
     }
