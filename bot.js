@@ -25,7 +25,7 @@ function check() {
     send("!test - responds hi");
     send("!help - shows commands");
     send("!about - about bot");
-    send("!mtgen - from general darian");
+    //send("!mtgen - from general darian");
     //send("!say - says whatever is after it");
     //send("!selfdestruct - kills bot");
     send("!whoami - your username");
