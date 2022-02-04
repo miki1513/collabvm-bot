@@ -23,7 +23,7 @@ while (true) {
     send("!help - shows commands");
     send("!about - about bot");
     send("!mtgen - from general darian");
-    send("!say - says whatever is after it");
+    //send("!say - says whatever is after it");
     send("!selfdestruct - kills bot");
   }
   if (latestMessage == "!about") {
@@ -32,9 +32,9 @@ while (true) {
   if (latestMessage == "!mtgen") {
     send(latestSender + ", no");
   }
-  if (latestMessage.includes("!say")) {
+  /*if (latestMessage.includes("!say")) {
     send(latestMessage.replace('!say ',''));
-  }
+  }*/
   if (latestMessage == "!selfdestruct") {
     if (latestSender == "killer") {
       send("goodbye world");
