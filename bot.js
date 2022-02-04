@@ -3,7 +3,7 @@ var latestSender;
 
 //change username
 document.getElementById("username-btn").click();
-document.getElementById("username-box").value = "cvmbot";
+document.getElementById("username-box").value = "CollabVM Bot";
 document.getElementById("username-ok-btn").click();
 
 //sends message
@@ -31,7 +31,7 @@ function check() {
     send("!selfdestruct - kills bot");
   }
   if (latestMessage == "!about") {
-    send("CollabVM-Bot Beta");
+    send("CollabVM-Bot Beta by iexist");
   }
   if (latestMessage == "!mtgen") {
     send(latestSender + ", no");
