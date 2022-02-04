@@ -40,6 +40,7 @@ function check() {
   if (latestMessage == prefix + "help2") {
     send("-say - says whatever is after it");
     send("-whoami - your username");
+  }
   if (latestMessage == prefix + "about") {
     send("hello i am bot beep boop");
   }
