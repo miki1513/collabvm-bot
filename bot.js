@@ -52,8 +52,8 @@ function check() {
   }
   if (latestMessage == "-selfdestruct") {
     if (latestSender == "CollabVM Bot -help") {
-      send("goodbye world");
-      changeUsername("Bot stopped");
+      send("Bot stopped");
+      location.reload();
     } else {
       send("no");
     }
