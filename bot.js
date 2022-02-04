@@ -8,7 +8,6 @@ function changeUsername(string) {
   document.getElementById("username-box").value = string;
   document.getElementById("username-ok-btn").click();
 }
-changeUsername("CollabVM Bot -help");
 
 //sends message
 function send(string) {
@@ -16,7 +15,8 @@ function send(string) {
   document.getElementById("chat-send-btn").click(); //clicks send button
 }
 
-//startup message
+//startup
+changeUsername("CollabVM Bot -help");
 send("Bot started");
 
 //checks for latest message
