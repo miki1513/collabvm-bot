@@ -47,12 +47,12 @@ function check() {
   if (latestMessage.includes("-say")) {
     send(latestMessage.replace('-say ',''));
   }
-  /*if (latestMessage == "!selfdestruct") {
-    if (latestSender == "killer") {
+  if (latestMessage == "!selfdestruct") {
+    if (latestSender == "CollabVM Bot -help") {
       send("goodbye world");
       location.reload();
     } else {
       send("no");
     }
-  }*/
+  }
 }
