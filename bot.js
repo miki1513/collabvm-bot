@@ -16,4 +16,8 @@ while (true) {
   if (latestMessage == "!test") {
     send("hi");
   }
+  if (latestMessage == "!help") {
+    send("!test - responds hi");
+    send("!help - shows commands");
+  }
 }
