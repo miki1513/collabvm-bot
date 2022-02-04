@@ -32,7 +32,7 @@ function check() {
     //send("!selfdestruct - kills bot");
     send("-whoami - your username");
   }
-  if (latestMessage == prefix + "!about") {
+  if (latestMessage == prefix + "about") {
     send("CollabVM Bot by iexist");
   }
   /*if (latestMessage == prefix + "!mtgen") {
