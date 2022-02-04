@@ -17,7 +17,7 @@ function send(string) {
 send("Bot started");
 
 //checks for latest message
-const interval = setInterval(function() {check()}, 500);
+const interval = setInterval(function() {check()}, 5000);
 latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1];
 latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0];
 function check() {
@@ -44,7 +44,6 @@ function check() {
   if (latestMessage == prefix + "whoami") {
     send(latestSender);
   }
-  setTimeout(check, 5000);
   /*if (latestMessage.includes("!say")) {
     send(latestMessage.replace('!say ',''));
   }*/
