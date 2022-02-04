@@ -13,6 +13,9 @@ function send(string) {
   document.getElementById("chat-send-btn").click(); //clicks send button
 }
 
+//startup message
+send("Bot started");
+
 //checks for latest message
 const interval = setInterval(function() {check()}, 500);
 latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1];
