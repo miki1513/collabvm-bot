@@ -36,7 +36,11 @@ while (true) {
     send(latestMessage.replace('!say ',''));
   }
   if (latestMessage == "!selfdestruct") {
-    send("goodbye world");
-    close();
+    if (latestSender == "killer") {
+      send("goodbye world");
+    } else {
+      send("no");
+    }
+    location.reload();
   }
 }
