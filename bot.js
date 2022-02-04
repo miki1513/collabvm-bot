@@ -37,6 +37,6 @@ while (true) {
   }
   if (latestMessage == "!selfdestruct") {
     send("goodbye world");
-    window.close();
+    close();
   }
 }
