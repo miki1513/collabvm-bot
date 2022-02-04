@@ -6,13 +6,14 @@ document.getElementById("username-btn").click();
 document.getElementById("username-box").value = "cvmbot";
 document.getElementById("username-ok-btn").click();
 
+//sends message
 function send(string) {
   document.getElementById("chat-input").value = string; //inputs string to input box
   document.getElementById("chat-send-btn").click(); //clicks send button
 }
 
 //checks for latest message
-const interval = setInterval(check(), 3000);
+const interval = setInterval(function() {check()}, 2000);
 latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1];
 latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0];
 function check() {
