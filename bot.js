@@ -12,6 +12,7 @@ function send(string) {
 }
 
 //checks for latest message
+const interval = setInterval(check(), 3000);
 latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1];
 latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0];
 function check() {
@@ -46,4 +47,3 @@ function check() {
     }
   }
 }
-setInterval(check(), 3);
