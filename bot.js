@@ -44,6 +44,7 @@ function check() {
   if (latestMessage == prefix + "whoami") {
     send(latestSender);
   }
+  setTimeout(check, 5000);
   /*if (latestMessage.includes("!say")) {
     send(latestMessage.replace('!say ',''));
   }*/
