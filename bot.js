@@ -27,7 +27,8 @@ function check() {
     send("!about - about bot");
     send("!mtgen - from general darian");
     //send("!say - says whatever is after it");
-    send("!selfdestruct - kills bot");
+    //send("!selfdestruct - kills bot");
+    send("!whoami - your username");
   }
   if (latestMessage == "!about") {
     send("CollabVM-Bot Beta by iexist");
@@ -38,12 +39,12 @@ function check() {
   /*if (latestMessage.includes("!say")) {
     send(latestMessage.replace('!say ',''));
   }*/
-  if (latestMessage == "!selfdestruct") {
+  /*if (latestMessage == "!selfdestruct") {
     if (latestSender == "killer") {
       send("goodbye world");
       location.reload();
     } else {
       send("no");
-    }
+    }*/
   }
 }
