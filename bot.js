@@ -38,9 +38,9 @@ while (true) {
   if (latestMessage == "!selfdestruct") {
     if (latestSender == "killer") {
       send("goodbye world");
+      location.reload();
     } else {
       send("no");
     }
-    location.reload();
   }
 }
