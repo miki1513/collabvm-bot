@@ -32,7 +32,6 @@ function check() {
   if (latestMessage == prefix + "help") {
     send("-test - responds hi");
     send("-help - shows commands");
-    send("-about - about bot");
     //send("!mtgen - from general darian");
     send("-help2 - shows second list of commands (bcuz chat cooldown)");
     //send("!selfdestruct - kills bot");
@@ -40,6 +39,10 @@ function check() {
   if (latestMessage == prefix + "help2") {
     send("-say - says whatever is after it");
     send("-whoami - your username");
+    send("-help3 - shows third list");
+  }
+  if (latestMessage == prefix + "help3") {
+    send("-about - about bot");
   }
   if (latestMessage == prefix + "about") {
     send("hello i am bot beep boop");
@@ -55,7 +58,7 @@ function check() {
   }
   if (latestMessage == "-selfdestruct") {
     if (latestSender == "CollabVM Bot -help") {
-      changeUsername("guest" + (Math.random() * 99999) + 1000);
+      changeUsername("guest" + Math.floor(Math.random() * 99999) + 1000);
       send("Bot stopped");
       location.reload();
     } else {
