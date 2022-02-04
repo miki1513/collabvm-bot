@@ -23,13 +23,13 @@ function check() {
     send("hi");
   }
   if (latestMessage == prefix + "help") {
-    send("!test - responds hi");
-    send("!help - shows commands");
-    send("!about - about bot");
+    send("-test - responds hi");
+    send("-help - shows commands");
+    send("-about - about bot");
     //send("!mtgen - from general darian");
     //send("!say - says whatever is after it");
     //send("!selfdestruct - kills bot");
-    send("!whoami - your username");
+    send("-whoami - your username");
   }
   if (latestMessage == prefix + "!about") {
     send("CollabVM Bot by iexist");
