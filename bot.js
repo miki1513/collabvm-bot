@@ -36,6 +36,9 @@ function check() {
   if (latestMessage == "!mtgen") {
     send(latestSender + ", no");
   }
+  if (latestMessage == "!whoami") {
+    send(latestSender);
+  }
   /*if (latestMessage.includes("!say")) {
     send(latestMessage.replace('!say ',''));
   }*/
