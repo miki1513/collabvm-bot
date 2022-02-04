@@ -2,7 +2,6 @@ var latestMessage;
 var latestSender;
 
 //change username
-document.getElementById("username-btn").click();
 document.getElementById("username-box").value = "CollabVM Bot";
 document.getElementById("username-ok-btn").click();
 
