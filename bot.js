@@ -31,7 +31,7 @@ function check() {
     send("-help - shows commands");
     send("-about - about bot");
     //send("!mtgen - from general darian");
-    //send("!say - says whatever is after it");
+    send("!say - says whatever is after it");
     //send("!selfdestruct - kills bot");
     send("-whoami - your username");
   }
@@ -44,9 +44,9 @@ function check() {
   if (latestMessage == prefix + "whoami") {
     send(latestSender);
   }
-  /*if (latestMessage.includes("!say")) {
-    send(latestMessage.replace('!say ',''));
-  }*/
+  if (latestMessage.includes("-say")) {
+    send(latestMessage.replace('-say ',''));
+  }
   /*if (latestMessage == "!selfdestruct") {
     if (latestSender == "killer") {
       send("goodbye world");
