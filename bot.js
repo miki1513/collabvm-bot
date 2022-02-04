@@ -5,9 +5,10 @@ var prefix = "-";
 
 //change username
 function changeUsername(string) {
-  document.getElementById("username-box").value = "CollabVM Bot -help";
+  document.getElementById("username-box").value = string;
   document.getElementById("username-ok-btn").click();
 }
+changeUsername("CollabVM Bot -help");
 
 //sends message
 function send(string) {
