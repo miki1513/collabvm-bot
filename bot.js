@@ -4,8 +4,10 @@ var cooldown;
 var prefix = "-";
 
 //change username
-document.getElementById("username-box").value = "CollabVM Bot -help";
-document.getElementById("username-ok-btn").click();
+function changeUsername(string) {
+  document.getElementById("username-box").value = "CollabVM Bot -help";
+  document.getElementById("username-ok-btn").click();
+}
 
 //sends message
 function send(string) {
@@ -47,10 +49,10 @@ function check() {
   if (latestMessage.includes("-say")) {
     send(latestMessage.replace('-say ',''));
   }
-  if (latestMessage == "!selfdestruct") {
+  if (latestMessage == "-selfdestruct") {
     if (latestSender == "CollabVM Bot -help") {
       send("goodbye world");
-      location.reload();
+      changeUsername("bot is off");
     } else {
       send("no");
     }
