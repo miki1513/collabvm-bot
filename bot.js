@@ -17,8 +17,8 @@ function send(string) {
 }
 
 //startup
-changeUsername("CollabVM Bot -help");
-send("Bot started, prefix is " + prefix);
+changeUsername("CollabVM Bot");
+send("Bot started, do " + prefix + "help");
 
 //checks for latest message
 const interval = setInterval(function() {check()}, 3000);
