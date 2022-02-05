@@ -17,7 +17,7 @@ function send(string) {
 }
 
 //startup
-changeUsername("CollabVM Bot");
+changeUsername("CollabVM Bot -help");
 send("Bot started, do " + prefix + "help");
 
 //checks for latest message
