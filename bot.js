@@ -73,6 +73,6 @@ function check() {
       location.reload();
     } else {
       send("no");
-    }*/
-  }
+    }
+  }*/
 }
