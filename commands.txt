@@ -1,0 +1,10 @@
+prefix is currently: -
+
+help - help command
+dog - random pic of dog
+flipcoin - flip a coin
+say - says whatever after it
+whoami - your username
+github - gives github link
+about - about bot
+test - responds hi
