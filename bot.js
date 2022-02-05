@@ -43,7 +43,7 @@ function check() {
   }
   if (latestMessage == prefix + "help3") {
     send("-about - about bot");
-    send("-flipcoin - makes a poll");
+    send("-flipcoin - flips a coin");
     send("-help4 - shows fourth list");
   }
   if (latestMessage == prefix + "help4") {
