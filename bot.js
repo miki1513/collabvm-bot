@@ -32,6 +32,7 @@ function check() {
   }
   if (latestMessage == prefix + "help") {
     send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands.txt");
+  }
   if (latestMessage == prefix + "github") {
     send("https://github.com/imightexist/collabvm-bot");
   }
