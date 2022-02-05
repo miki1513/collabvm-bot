@@ -76,7 +76,7 @@ function check() {
   if (latestMessage == prefix + "whoami") {
     send(latestSender);
   }
-  if (latestMessage.includes("-say")) {
+  if (latestMessage.includes("-say ")) {
     send(latestMessage.replace('-say ',''));
   }
   if (latestMessage == "-selfdestruct") {
