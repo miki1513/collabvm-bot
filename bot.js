@@ -56,6 +56,7 @@ function check() {
   }
   if (latestMessage == prefix + "about") {
     send("hello i am bot beep boop");
+    send("i check for bot commands every 4 seconds");
   }
   /*if (latestMessage == prefix + "!mtgen") {
     send(latestSender + ", no");
