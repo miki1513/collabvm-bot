@@ -18,7 +18,7 @@ function send(string) {
 
 //startup
 changeUsername("CollabVM Bot -help");
-send("Bot started");
+send("Bot started, prefix is " + prefix);
 
 //checks for latest message
 const interval = setInterval(function() {check()}, 3000);
@@ -31,25 +31,7 @@ function check() {
     send("hi");
   }
   if (latestMessage == prefix + "help") {
-    send("-test - responds hi");
-    send("-help - shows commands");
-    send("-help2 - shows second list of commands (bcuz chat cooldown)");
-    //send("!selfdestruct - kills bot");
-  }
-  if (latestMessage == prefix + "help2") {
-    send("-say - says whatever is after it");
-    send("-whoami - your username");
-    send("-help3 - shows third list");
-  }
-  if (latestMessage == prefix + "help3") {
-    send("-about - about bot");
-    send("-flipcoin - flips a coin");
-    send("-help4 - shows fourth list");
-  }
-  if (latestMessage == prefix + "help4") {
-    send("-dog - dog pic from imgur");
-    send("-github - gives github link");
-  }
+    send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands.txt");
   if (latestMessage == prefix + "github") {
     send("https://github.com/imightexist/collabvm-bot");
   }
@@ -83,13 +65,13 @@ function check() {
   if (latestMessage.includes("-say ")) {
     send(latestMessage.replace('-say ',''));
   }
-  if (latestMessage == "-selfdestruct") {
+  /*if (latestMessage == "-selfdestruct") {
     if (latestSender == "CollabVM Bot -help") {
       changeUsername("guest" + Math.floor(Math.random() * 98999));
       send("Bot stopped");
       location.reload();
     } else {
       send("no");
-    }
+    }*/
   }
 }
