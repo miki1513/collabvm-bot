@@ -1,7 +1,7 @@
 prefix is currently: -
 
 help - help command
-dog - random pic of dog
+rockpaperscissors - responds rock paper or scissors
 flipcoin - flip a coin
 say - says whatever after it
 whoami - your username
