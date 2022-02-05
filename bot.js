@@ -66,13 +66,4 @@ function check() {
   if (latestMessage.includes("-say ")) {
     send(latestMessage.replace('-say ',''));
   }
-  /*if (latestMessage == "-selfdestruct") {
-    if (latestSender == "CollabVM Bot -help") {
-      changeUsername("guest" + Math.floor(Math.random() * 98999));
-      send("Bot stopped");
-      location.reload();
-    } else {
-      send("no");
-    }
-  }*/
 }
