@@ -1,6 +1,7 @@
 var latestMessage;
 var latestSender;
 var cooldown;
+var random;
 var prefix = "-";
 
 //change username
@@ -42,6 +43,29 @@ function check() {
   }
   if (latestMessage == prefix + "help3") {
     send("-about - about bot");
+    send("-flipcoin - makes a poll");
+    send("-help4 - shows fourth list");
+  }
+  if (latestMessage == prefix + "help4") {
+    send("-dog - dog pic from imgur");
+  }
+  if (latestMessage == prefix + "dog") {
+    random = Math.floor(Math.random() * 3);
+    if (random == 1) {
+      send("https://imgur.com/t/dogs/kRbjSea");
+    } else if (random == 2) {
+      send("https://imgur.com/t/dogs/NK9mpuo");
+    } else if (random == 3) {
+      send("https://imgur.com/t/dogs/rlut8AX");
+    }
+  }
+  if (latestMessage == prefix + "flipcoin") {
+    random = Math.floor(Math.random() * 2);
+    if (random == 1) {
+      send("heads");
+    } else {
+      send("tails");
+    }
   }
   if (latestMessage == prefix + "about") {
     send("hello i am bot beep boop");
