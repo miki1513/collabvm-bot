@@ -36,14 +36,14 @@ function check() {
   if (latestMessage == prefix + "github") {
     send("https://github.com/imightexist/collabvm-bot");
   }
-  if (latestMessage == prefix + "dog") {
+  if (latestMessage == prefix + "rockpaperscissors") {
     random = Math.floor(Math.random() * 3);
     if (random == 1) {
-      send("https://imgur.com/t/dogs/kRbjSea");
+      send("rock");
     } else if (random == 2) {
-      send("https://imgur.com/t/dogs/NK9mpuo");
+      send("paper");
     } else if (random == 3) {
-      send("https://imgur.com/t/dogs/rlut8AX");
+      send("scissors");
     }
   }
   if (latestMessage == prefix + "flipcoin") {
