@@ -48,6 +48,10 @@ function check() {
   }
   if (latestMessage == prefix + "help4") {
     send("-dog - dog pic from imgur");
+    send("-github - gives github link");
+  }
+  if (latestMessage == prefix + "github") {
+    send("https://github.com/imightexist/collabvm-bot");
   }
   if (latestMessage == prefix + "dog") {
     random = Math.floor(Math.random() * 3);
