@@ -32,7 +32,7 @@ function check() {
   if (latestMessage == prefix + "test") {
     send("hi");
   }
-  if (latestMessage.includes(prefix + "promote")) {
+  /*if (latestMessage.includes(prefix + "promote")) {
     if (latestChat.innerHTML.split("</span>")[0].split(">")[0].includes("username admin") && adminEnabled = true) {
       //that was a shitty idea but it works fine i think
       special.push(latestMessage.replace(prefix + 'promote ',''));
@@ -40,7 +40,7 @@ function check() {
     } else {
       send("i may not have admin, or you don't");
     }
-  }
+  }*/
   if (latestMessage == prefix + "help") {
     send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands.txt");
   }
