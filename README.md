@@ -1,5 +1,5 @@
 # collabvm-bot
-while this is a client side bot, some retards still fail to understand that its a fucking bot!
+while this is a client side bot, some retards still think the bot is fake, probably because they don't understand javascript. retards.PNG shows it.
 
 # "hosting" the bot
 you can use a nodejs script that runs it in a browser or just copy the code inside console<br>
