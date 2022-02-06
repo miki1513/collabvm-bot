@@ -1,7 +1,5 @@
-var latestMessage;
-var latestSender;
-var cooldown;
-var random;
+var latestMessage,latestSender,cooldown,random,adminEnabled,pass;
+adminEnabled = false;
 var prefix = "-";
 
 //change username
@@ -19,6 +17,7 @@ function send(string) {
 //startup
 changeUsername("CollabVM Bot -help");
 send("Bot started, do " + prefix + "help");
+//no mod stuff added yet
 
 //checks for latest message
 const interval = setInterval(function() {check()}, 3000);
