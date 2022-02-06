@@ -1,4 +1,5 @@
 prefix is currently: -
+also some of you retards think that this bot is not a real bot because its slow to respond, stfu
 
 Basic:
 help - help command
