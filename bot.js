@@ -33,7 +33,8 @@ function check() {
     send("hi");
   }
   if (latestMessage.includes(prefix + "promote")) {
-    if (latestChat.includes("username admin") && adminEnabled = true) {
+    if (latestChat.innerHTML.split("</span>")[0].split(">")[0].includes("username admin") && adminEnabled = true) {
+      //that was a shitty idea but it works fine i think
       special.push(latestMessage.replace(prefix + 'promote ',''));
       send(latestMessage.replace(prefix + 'promote ','') + " got mod commands");
     } else {
