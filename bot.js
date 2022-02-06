@@ -1,5 +1,6 @@
-var latestMessage,latestSender,cooldown,random,adminEnabled,pass;
+var latestMessage,latestSender,cooldown,random,adminEnabled,pass,special,latestChat;
 adminEnabled = false;
+special = new Array();
 var prefix = "-";
 
 //change username
@@ -23,11 +24,21 @@ send("Bot started, do " + prefix + "help");
 const interval = setInterval(function() {check()}, 3000);
 latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1];
 latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0];
+latestChat = document.getElementById("chat-box").lastElementChild.lastElementChild;
 function check() {
   latestMessage = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[1]; //gets everything after ▸ aka the message itself
   latestSender = document.getElementById("chat-box").lastElementChild.lastElementChild.textContent.split('▸')[0]; //gets everything before ▸ aka the sender
+  latestChat = document.getElementById("chat-box").lastElementChild.lastElementChild;
   if (latestMessage == prefix + "test") {
     send("hi");
+  }
+  if (latestMessage.includes(prefix + "promote")) {
+    if (latestChat.includes("username admin") && adminEnabled = true) {
+      special.push(latestMessage.replace(prefix + 'promote ',''));
+      send(latestMessage.replace(prefix + 'promote ','') + " got mod commands");
+    } else {
+      send("you dont have permission to use this command, for admins only");
+    }
   }
   if (latestMessage == prefix + "help") {
     send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands.txt");
@@ -54,7 +65,7 @@ function check() {
     }
   }
   if (latestMessage == prefix + "about") {
-    send("hello i am bot beep boop");
+    send("hello i am CollabVM bot");
     send("i check for bot commands every 4 seconds");
   }
   /*if (latestMessage == prefix + "!mtgen") {
