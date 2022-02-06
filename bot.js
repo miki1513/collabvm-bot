@@ -1,4 +1,4 @@
-var latestMessage,latestSender,cooldown,random,adminEnabled,pass,special,latestChat;
+var latestMessage,latestSender,cooldown,random,adminEnabled,pass,special,latestChat,vm;
 adminEnabled = false;
 special = new Array();
 var prefix = "-";
@@ -14,6 +14,8 @@ function send(string) {
   document.getElementById("chat-input").value = string; //inputs string to input box
   document.getElementById("chat-send-btn").click(); //clicks send button
 }
+
+vm = document.querySelector("canvas");
 
 //startup
 changeUsername("CollabVM Bot -help");
