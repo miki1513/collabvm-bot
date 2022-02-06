@@ -17,4 +17,3 @@ flipcoin - flip a coin
 say - says whatever after it
 
 Moderation:
-promote - gives person moderation commands without being mod or admin
