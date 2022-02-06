@@ -17,4 +17,4 @@ flipcoin - flip a coin
 say - says whatever after it
 
 Moderation:
-none yet - will be for mods only
+probably will never be added
