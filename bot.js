@@ -37,7 +37,7 @@ function check() {
       special.push(latestMessage.replace(prefix + 'promote ',''));
       send(latestMessage.replace(prefix + 'promote ','') + " got mod commands");
     } else {
-      send("you dont have permission to use this command, for admins only");
+      send("i may not have admin, or you don't");
     }
   }
   if (latestMessage == prefix + "help") {
