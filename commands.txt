@@ -1,10 +1,18 @@
 prefix is currently: -
 
+Basic:
 help - help command
+test - responds hi
+
+Info:
+github - gives github link
+whoami - your username
+about - about bot
+
+Fun:
 rockpaperscissors - responds rock paper or scissors
 flipcoin - flip a coin
 say - says whatever after it
-whoami - your username
-github - gives github link
-about - about bot
-test - responds hi
+
+Moderation:
+none yet
