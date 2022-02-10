@@ -1,7 +1,7 @@
 var latestMessage,latestSender,cooldown,random,adminEnabled,pass,special,latestChat,vm;
 adminEnabled = false;
 special = new Array();
-var prefix = "-";
+var prefix = "c!";
 
 //change username
 function changeUsername(string) {
@@ -77,7 +77,7 @@ function check() {
   if (latestMessage == prefix + "whoami") {
     send(latestSender);
   }
-  if (latestMessage.includes("-say ")) {
-    send(latestMessage.replace('-say ',''));
+  if (latestMessage.includes(prefix + "say ")) {
+    send(latestMessage.replace(prefix + 'say ',''));
   }
 }
