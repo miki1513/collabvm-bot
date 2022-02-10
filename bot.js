@@ -18,7 +18,7 @@ function send(string) {
 vm = document.querySelector("canvas");
 
 //startup
-changeUsername("CollabVM Bot " + prefix + "help"); //why the fuck no work
+changeUsername("CollabVM Bot c!help"); //why the fuck no work
 send("Bot started, do " + prefix + "help");
 //no mod stuff added yet
 
