@@ -1,20 +1,13 @@
 prefix is currently: c!
 this bot checks for the LATEST message every 3 seconds and detects if it's a command. so if you want it to work, make sure no one talks after.
 
-Basic:
 help - help command
 test - responds hi
-
-Info:
 github - gives github link
 about - about bot
-
-Fun:
 rockpaperscissors - responds rock paper or scissors
 flipcoin - flip a coin
 say - says whatever after it
 math - does equation after it
 whoami - your username
-
-Moderation:
-probably will never be added
+endturn - ends turn
