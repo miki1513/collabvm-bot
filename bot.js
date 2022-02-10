@@ -87,4 +87,8 @@ function check() {
       send("doesn't work eat shit");
     }
   }
+  if (latestMessage == prefix + "endturn") {
+    document.getElementById("end-turn-btn").click();
+    send("Ended turn");
+  }
 }
