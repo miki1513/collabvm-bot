@@ -81,6 +81,10 @@ function check() {
     send(latestMessage.replace(prefix + 'say ',''));
   }
   if (latestMessage.includes(prefix + "math ")) {
-    send(eval(latestMessage.replace(prefix + 'math ','')));
+    if (!(isNaN(eval(latestMessage.replace(prefix + 'math ',''))))) {
+      send(eval(latestMessage.replace(prefix + 'math ','')));
+    } else {
+      send("doesn't work eat shit");
+    }
   }
 }
