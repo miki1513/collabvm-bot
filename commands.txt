@@ -1,4 +1,4 @@
-prefix is currently: -
+prefix is currently: c!
 this bot checks for the LATEST message every 3 seconds and detects if it's a command. so if you want it to work, make sure no one talks after.
 
 Basic:
