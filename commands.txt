@@ -7,13 +7,14 @@ test - responds hi
 
 Info:
 github - gives github link
-whoami - your username
 about - about bot
 
 Fun:
 rockpaperscissors - responds rock paper or scissors
 flipcoin - flip a coin
 say - says whatever after it
+math - does equation after it
+whoami - your username
 
 Moderation:
 probably will never be added
