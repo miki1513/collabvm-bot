@@ -80,4 +80,7 @@ function check() {
   if (latestMessage.includes(prefix + "say ")) {
     send(latestMessage.replace(prefix + 'say ',''));
   }
+  if (latestMessage.includes(prefix + "math ")) {
+    send(eval(latestMessage.replace(prefix + 'math ','')));
+  }
 }
