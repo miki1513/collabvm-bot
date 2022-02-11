@@ -99,7 +99,16 @@ function check() {
     send(latestMessage.replace(prefix + 'uppercase ','').toUpperCase());
   }
   if (latestMessage == prefix + "updateinfo") {
-    send("renamed updateinfo command and fixed autotype");
+    send("added summon command");
+  }
+  if (latestMessage.includes(prefix + "summon ")) {
+    changeUsername(latestMessage.replace(prefix + 'summon ',''));
+    if (latestMessage.replace(prefix + 'summon ','') == "jjjj") {
+      send("I LOVE JJJJ! NOW!");
+    } else {
+      send("Object summoned");
+    }
+    changeUsername("CollabVM Bot " + prefix + "help");
   }
   //autotype
   if (latestMessage.includes(prefix + "autotype ")) {
