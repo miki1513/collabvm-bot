@@ -13,3 +13,4 @@ whoami - your username
 endturn - ends turn
 uppercase - converts text to uppercase
 lowercase - converts text to lowercase
+autotype - autotypes whatever is after it
