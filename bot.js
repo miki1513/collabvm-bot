@@ -121,7 +121,10 @@ function check() {
         keyCode : autotypeText.charCodeAt(autotypeIndex)
       });
       vm.focus();
+      autotypeEvent.preventDefault();
       vm.dispatchEvent(autotypeEvent);
+      vm.focus();
+      autotypeEventTwo.preventDefault();
       vm.dispatchEvent(autotypeEventTwo);
     }
   }
