@@ -13,6 +13,6 @@ whoami - your username
 endturn - ends turn
 uppercase - converts text to uppercase
 lowercase - converts text to lowercase
-autotype - autotypes whatever is after it
+autotype - autotypes whatever is after it (doesn't work right now)
 updateinfo - useless update info, it's just used to test if it's using the updated bot
 summon - summons object (try c!summon jjjj, will add more forkies)
