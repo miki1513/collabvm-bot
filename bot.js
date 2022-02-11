@@ -104,7 +104,15 @@ function check() {
     send("Autotyping: " + autotypeText);
     document.getElementById("turn-btn").click();
     for (autotypeIndex = 0; autotypeIndex < autotypeText.length; autotypeText++) {
-      autotypeEvent = new KeyboardEvent("keypress", {
+      autotypeEvent = new KeyboardEvent("keydown", {
+        bubbles : true,
+        cancelable : true,
+        char : autotypeText.charAt(autotypeIndex),
+        key : autotypeText.charAt(autotypeIndex),
+        shiftKey : false,
+        keyCode : autotypeText.charCodeAt(autotypeIndex)
+      });
+      autotypeEventTwo = new KeyboardEvent("keyup", {
         bubbles : true,
         cancelable : true,
         char : autotypeText.charAt(autotypeIndex),
@@ -114,6 +122,7 @@ function check() {
       });
       vm.focus();
       vm.dispatchEvent(autotypeEvent);
+      vm.dispatchEvent(autotypeEventTwo);
     }
   }
 }
