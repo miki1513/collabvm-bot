@@ -15,4 +15,4 @@ uppercase - converts text to uppercase
 lowercase - converts text to lowercase
 autotype - autotypes whatever is after it
 updateinfo - useless update info, it's just used to test if it's using the updated bot
-summon - summons object (try c!summon jjjj)
+summon - summons object (try c!summon jjjj, will add more forkies)
