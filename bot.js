@@ -1,4 +1,4 @@
-var latestMessage,latestSender,cooldown,random,adminEnabled,pass,special,latestChat,vm;
+//var latestMessage,latestSender,cooldown,random,adminEnabled,pass,special,latestChat,vm;
 adminEnabled = false;
 special = new Array();
 var prefix = "c!";
@@ -15,6 +15,7 @@ function send(string) {
   document.getElementById("chat-send-btn").click(); //clicks send button
 }
 
+//other shit
 vm = document.querySelector("canvas");
 
 //startup
@@ -96,5 +97,23 @@ function check() {
   }
   if (latestMessage.includes(prefix + "uppercase ")) {
     send(latestMessage.replace(prefix + 'uppercase ','').toUpperCase());
+  }
+  //autotype
+  if (latestMessage.includes(prefix + "autotype ")) {
+    autotypeText = latestMessage.replace(prefix + 'autotype ','');
+    send("Autotyping: " + autotypeText);
+    document.getElementById("turn-btn").click();
+    for (autotypeIndex = 0; autotypeIndex < autotypeText.length; autotypeText++) {
+      autotypeEvent = new KeyboardEvent("keypress", {
+        bubbles : true,
+        cancelable : true,
+        char : autotypeText.charAt(autotypeIndex),
+        key : autotypeText.charAt(autotypeIndex),
+        shiftKey : false,
+        keyCode : autotypeText.charCodeAt(autotypeIndex)
+      });
+      vm.focus();
+      vm.dispatchEvent(autotypeEvent);
+    }
   }
 }
