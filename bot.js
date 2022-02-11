@@ -98,8 +98,8 @@ function check() {
   if (latestMessage.includes(prefix + "uppercase ")) {
     send(latestMessage.replace(prefix + 'uppercase ','').toUpperCase());
   }
-  if (latestMessage == prefix + "updatetest") {
-    send("this version added the updatetest command");
+  if (latestMessage == prefix + "updateinfo") {
+    send("renamed updateinfo command and fixed autotype");
   }
   //autotype
   if (latestMessage.includes(prefix + "autotype ")) {
@@ -108,20 +108,20 @@ function check() {
     document.getElementById("turn-btn").click();
     for (autotypeIndex = 0; autotypeIndex < autotypeText.length; autotypeText++) {
       autotypeEvent = new KeyboardEvent("keydown", {
-        bubbles : true,
-        cancelable : true,
-        char : autotypeText.charAt(autotypeIndex),
-        key : autotypeText.charAt(autotypeIndex),
-        shiftKey : false,
-        keyCode : autotypeText.charCodeAt(autotypeIndex)
+        'bubbles' : true,
+        'cancelable' : true,
+        'char' : autotypeText.charAt(autotypeIndex),
+        'key' : autotypeText.charAt(autotypeIndex),
+        'shiftKey' : false,
+        'keyCode' : autotypeText.charCodeAt(autotypeIndex)
       });
       autotypeEventTwo = new KeyboardEvent("keyup", {
-        bubbles : true,
-        cancelable : true,
-        char : autotypeText.charAt(autotypeIndex),
-        key : autotypeText.charAt(autotypeIndex),
-        shiftKey : false,
-        keyCode : autotypeText.charCodeAt(autotypeIndex)
+        'bubbles' : true,
+        'cancelable' : true,
+        'char' : autotypeText.charAt(autotypeIndex),
+        'key' : autotypeText.charAt(autotypeIndex),
+        'shiftKey' : false,
+        'keyCode' : autotypeText.charCodeAt(autotypeIndex)
       });
       vm.focus();
       autotypeEvent.preventDefault();
