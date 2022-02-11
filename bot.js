@@ -98,6 +98,9 @@ function check() {
   if (latestMessage.includes(prefix + "uppercase ")) {
     send(latestMessage.replace(prefix + 'uppercase ','').toUpperCase());
   }
+  if (latestMessage == prefix + "updatetest") {
+    send("this version added the updatetest command");
+  }
   //autotype
   if (latestMessage.includes(prefix + "autotype ")) {
     autotypeText = latestMessage.replace(prefix + 'autotype ','');
