@@ -115,7 +115,7 @@ function check() {
     autotypeText = latestMessage.replace(prefix + 'autotype ','');
     send("Autotyping: " + autotypeText);
     document.getElementById("turn-btn").click();
-    for (autotypeIndex = 0; autotypeIndex < autotypeText.length; autotypeText++) {
+    for (autotypeIndex = 0; autotypeIndex < autotypeText.length; autotypeIndex++) {
       autotypeEvent = new KeyboardEvent("keydown", {
         'bubbles' : true,
         'cancelable' : true,
