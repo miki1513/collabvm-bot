@@ -115,29 +115,36 @@ function check() {
     autotypeText = latestMessage.replace(prefix + 'autotype ','');
     send("Autotyping: " + autotypeText);
     document.getElementById("turn-btn").click();
-    for (autotypeIndex = 0; autotypeIndex < autotypeText.length; autotypeIndex++) {
-      autotypeEvent = new KeyboardEvent("keydown", {
-        'bubbles' : true,
-        'cancelable' : true,
-        'char' : autotypeText.charAt(autotypeIndex),
-        'key' : autotypeText.charAt(autotypeIndex),
-        'shiftKey' : false,
-        'keyCode' : autotypeText.charCodeAt(autotypeIndex)
-      });
-      autotypeEventTwo = new KeyboardEvent("keyup", {
-        'bubbles' : true,
-        'cancelable' : true,
-        'char' : autotypeText.charAt(autotypeIndex),
-        'key' : autotypeText.charAt(autotypeIndex),
-        'shiftKey' : false,
-        'keyCode' : autotypeText.charCodeAt(autotypeIndex)
-      });
-      vm.focus();
-      autotypeEvent.preventDefault();
-      vm.dispatchEvent(autotypeEvent);
-      vm.focus();
-      autotypeEventTwo.preventDefault();
-      vm.dispatchEvent(autotypeEventTwo);
+    if (document.getElementsByClassName("has-turn")[0].innerHTML == "CollabVM Bot " + prefix + "help") {
+      send("Autotype only works when no one is taking turn hehe");
+      document.getElementById("end-turn-btn").click();
+    } else {
+      for (autotypeIndex = 0; autotypeIndex < autotypeText.length; autotypeIndex++) {
+        autotypeEvent = document.createEvent("KeyboardEvent");
+        autotypeEventTwo = document.createEvent("KeyboardEvent");
+        autotypeEvent[initMethod]("keydown", {
+          'bubbles' : true,
+          'cancelable' : true,
+          'char' : autotypeText.charAt(autotypeIndex),
+          'key' : autotypeText.charAt(autotypeIndex),
+          'shiftKey' : false,
+          'keyCode' : autotypeText.charCodeAt(autotypeIndex)
+        });
+        autotypeEventTwo[initMethod]("keyup", {
+          'bubbles' : true,
+          'cancelable' : true,
+          'char' : autotypeText.charAt(autotypeIndex),
+          'key' : autotypeText.charAt(autotypeIndex),
+          'shiftKey' : false,
+          'keyCode' : autotypeText.charCodeAt(autotypeIndex)
+        });
+        vm.focus();
+        autotypeEvent.preventDefault();
+        vm.dispatchEvent(autotypeEvent);
+        vm.focus();
+        autotypeEventTwo.preventDefault();
+        vm.dispatchEvent(autotypeEventTwo);
+      }
     }
   }
 }
