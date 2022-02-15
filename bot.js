@@ -20,7 +20,7 @@ vm = document.querySelector("canvas");
 
 //startup
 changeUsername("CollabVM Bot " + prefix + "help"); //why the fuck no work
-send("Bot started, do " + prefix + "help");
+//send("Bot started, do " + prefix + "help"); that was kind of annoying lol
 //no mod stuff added yet
 
 //checks for latest message
