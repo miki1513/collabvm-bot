@@ -99,7 +99,7 @@ function check() {
     send(latestMessage.replace(prefix + 'uppercase ','').toUpperCase());
   }
   if (latestMessage == prefix + "updateinfo") {
-    send("added summon command");
+    send("added vmname command");
   }
   if (latestMessage.includes(prefix + "summon ")) {
     changeUsername(latestMessage.replace(prefix + 'summon ',''));
