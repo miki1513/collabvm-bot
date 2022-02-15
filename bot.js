@@ -110,6 +110,9 @@ function check() {
     }
     changeUsername("CollabVM Bot " + prefix + "help");
   }
+  if (latestMessage == prefix + "vmname") {
+    send(vmName);
+  }
   //autotype
   if (latestMessage.includes(prefix + "autotype ")) {
     autotypeText = latestMessage.replace(prefix + 'autotype ','');
