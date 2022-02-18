@@ -8,7 +8,6 @@ about - about bot
 rockpaperscissors - responds rock paper or scissors
 flipcoin - flip a coin
 say - says whatever after it
-math - does equation after it
 whoami - your username
 endturn - ends turn
 uppercase - converts text to uppercase
