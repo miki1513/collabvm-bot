@@ -25,13 +25,13 @@ function connect(){
       if (command == prefix + "help"){
         send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands-nodejs.txt");
       }
+      setInterval(function(){
+	      if (f.connected){
+		      f.sendUTF('3.nop;');
+	      }
+      },2500);
     })
   })
-  setInterval(function(){
-	  if (f.connected){
-		  f.sendUTF('3.nop;');
-	  }
-  },2500);
   ws.connect('ws://' + vm, 'guacamole');
 }
 function decodeCommand(cypher) {
