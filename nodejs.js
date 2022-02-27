@@ -22,6 +22,9 @@ function connect(){
       if (command == prefix + "test"){
         send("hello world");
       }
+      if (command == prefix + "help"){
+        send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands-nodejs.txt");
+      }
     })
   })
   ws.connect('ws://' + vm, 'guacamole');
