@@ -13,7 +13,7 @@ function connect(){
     }
     f.on('message',function(message){
       var cmd = decodeCommand(message.utf8Data);
-      changeUsername("CollabVM Bot c!help");
+      changeUsername("NodeJS Bot c!help");
       var username = cmd[1];
       var command = cmd[2];
       var prefix = "c!";
@@ -24,6 +24,20 @@ function connect(){
       }
       if (command == prefix + "help"){
         send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands-nodejs.txt");
+      }
+      if (command == prefix + "github"){
+	      send("https://github.com/imightexist/collabvm-bot");
+      }
+      if (command == prefix + "about"){
+	      send("hello i am CollabVM bot");
+      }
+      if (command == prefix + "flipcoin"){
+	      random = Math.floor(Math.random() * 2);
+	      if (random == 1){
+		      send("heads");
+	      }else{
+		      send("tails");
+	      }
       }
       setInterval(function(){
 	      if (f.connected){
