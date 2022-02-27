@@ -27,6 +27,11 @@ function connect(){
       }
     })
   })
+  setInterval(function(){
+	  if (conx.connected){
+		  conx.sendUTF('3.nop;');
+	  }
+  },2500);
   ws.connect('ws://' + vm, 'guacamole');
 }
 function decodeCommand(cypher) {
