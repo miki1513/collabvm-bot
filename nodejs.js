@@ -31,6 +31,9 @@ function connect(){
       if (command == prefix + "about"){
 	      send("hello i am CollabVM bot");
       }
+      if (command.includes(prefix + "say "){
+	  send(command.replace(prefix + "say ",""));
+      }
       if (command == prefix + "flipcoin"){
 	      random = Math.floor(Math.random() * 2);
 	      if (random == 1){
