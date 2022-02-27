@@ -25,4 +25,5 @@ function connect(){
       }
     }
   }
+  ws.connect('ws://' + vm, 'guacamole');
 }
