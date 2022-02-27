@@ -4,3 +4,4 @@ test - sends hello world
 help - help command
 about - about bot
 flipcoin - flips a coin
+say - says whatever is after it
