@@ -2,3 +2,5 @@ prefix is currently: c!
 
 test - sends hello world
 help - help command
+about - about bot
+flipcoin - flips a coin
