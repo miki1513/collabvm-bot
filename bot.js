@@ -1,7 +1,7 @@
 //var latestMessage,latestSender,cooldown,random,adminEnabled,pass,special,latestChat,vm;
 adminEnabled = false;
 special = new Array();
-var prefix = "c!";
+var prefix = "!";
 
 //change username
 function changeUsername(string) {
@@ -19,8 +19,8 @@ function send(string) {
 vm = document.querySelector("canvas");
 
 //startup
-changeUsername("CollabVM Bot " + prefix + "help"); //why the fuck no work
-//send("Bot started, do " + prefix + "help"); that was kind of annoying lol
+changeUsername("bot " + prefix + "help"); //why the fuck no work
+send("Bot started, do " + prefix + "help"); that was kind of annoying lol
 //no mod stuff added yet
 
 //checks for latest message
@@ -45,7 +45,7 @@ function check() {
     }
   }*/
   if (latestMessage == prefix + "help") {
-    send("https://raw.githubusercontent.com/imightexist/collabvm-bot/main/commands.txt");
+    send("https://raw.githubusercontent.com/miki1513/collabvm-bot/main/commands.txt");
   }
   if (latestMessage == prefix + "github") {
     send("https://github.com/imightexist/collabvm-bot");
