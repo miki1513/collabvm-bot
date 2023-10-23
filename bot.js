@@ -19,7 +19,7 @@ function send(string) {
 vm = document.querySelector("canvas");
 
 //startup
-changeUsername("bot " + prefix + "help"); //why the fuck no work
+changeUsername("vmbot " + prefix + "help"); //why the fuck no work
 send("Bot started, do " + prefix + "help"); that was kind of annoying lol
 //no mod stuff added yet
 
